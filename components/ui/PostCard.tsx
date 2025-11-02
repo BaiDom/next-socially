@@ -141,7 +141,7 @@ const PostCard = ({
           {/* post image */}
           {post.image && (
             <div className="rounded-lg overflow-hidden">
-              <Image
+              <img
                 src={post.image}
                 alt="Post content"
                 className="w-full h-auto object-cover"

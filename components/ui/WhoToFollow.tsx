@@ -13,7 +13,7 @@ const WhoToFollow = async () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Whoi To Follow</CardTitle>
+        <CardTitle>Who To Follow</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
