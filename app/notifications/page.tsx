@@ -12,7 +12,6 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { formatDistanceToNow } from "date-fns";
 import { HeartIcon, MessageCircleIcon, UserPlusIcon } from "lucide-react";
-import Image from "next/image";
 
 type Notifications = Awaited<ReturnType<typeof getNotifications>>;
 type Notification = Notifications[number];

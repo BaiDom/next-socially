@@ -3,18 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import Link from "next/link";
 import { Avatar, AvatarImage } from "./avatar";
 import FollowButton from "./FollowButton";
+import { Separator } from "@radix-ui/react-separator";
 
 const WhoToFollow = async () => {
   const users = await getRandomUsers();
 
   if (users.length === 0) return null;
-  console.log(users);
 
   return (
     <Card>
-      <CardHeader>
-        <CardTitle>Who To Follow</CardTitle>
+      <CardHeader className="">
+        <CardTitle className="text-xl ">Who To Follow</CardTitle>
       </CardHeader>
+
       <CardContent>
         <div className="space-y-4">
           {users.map((user) => (
